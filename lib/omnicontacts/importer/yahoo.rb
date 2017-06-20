@@ -15,6 +15,7 @@ module OmniContacts
         @authorize_path = '/oauth2/request_auth'
         @auth_token_path = '/oauth2/get_request_token'
         @contacts_host = 'social.yahooapis.com'
+        @scope = ''
       end
 
       def fetch_contacts_from_token_and_verifier auth_token, auth_token_secret, auth_verifier
